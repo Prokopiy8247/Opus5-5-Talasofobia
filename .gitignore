@@ -1,0 +1,12 @@
+# Godot cache and local output
+.godot/
+*.translation
+# Local builds, captures and logs (not part of the source)
+Builds/
+QA/
+*.log
+*.tmp
+__pycache__/
+# OS files
+Thumbs.db
+.DS_Store
