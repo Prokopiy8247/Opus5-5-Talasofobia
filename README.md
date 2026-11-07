@@ -66,6 +66,14 @@ Opus5-5-Talasofobia/
   треск льда): <https://oceanservice.noaa.gov/facts/bloop.html>.
 - Игры сделаны на **Godot Engine** (лицензия MIT): <https://godotengine.org>.
 
+### Лицензия
+
+Код, шейдеры и документация этого репозитория распространяются по лицензии **MIT** (файл [LICENSE](LICENSE)): можно
+использовать, менять и распространять с сохранением упоминания авторства.
+**Исключения:** 3D-модели существ (Bloop и SCP-3000) сгенерированы через Tripo, на их использование действуют условия Tripo;
+существо SCP-3000 основано на материале под лицензией CC BY-SA 3.0, и при его повторном использовании нужно
+соблюдать условия этой лицензии (указание авторов, та же лицензия).
+
 ---
 
 <a name="-english"></a>
@@ -129,3 +137,11 @@ works for other engines):
 - "Bloop" in NADIR is a fictional creature inspired by the mysterious "Bloop" sound recorded in 1997 (NOAA concluded it was
   cracking ice): <https://oceanservice.noaa.gov/facts/bloop.html>.
 - The games are built with the **Godot Engine** (MIT license): <https://godotengine.org>.
+
+### License
+
+The code, shaders and documentation in this repository are released under the **MIT** license (see [LICENSE](LICENSE)): you may
+use, modify and distribute them as long as the copyright notice is kept.
+**Exceptions:** the 3D models of the creatures (Bloop and SCP-3000) were generated with Tripo, and their use is subject to Tripo's
+terms; the SCP-3000 creature is based on material under CC BY-SA 3.0, so if you reuse it you must follow that license
+(credit the authors, share alike).
