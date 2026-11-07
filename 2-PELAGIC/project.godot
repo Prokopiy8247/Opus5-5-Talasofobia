@@ -1,0 +1,66 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="PELAGIC"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/use_debanding=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+lights_and_shadows/directional_shadow/size=4096
+environment/volumetric_fog/volume_size=48
+environment/volumetric_fog/volume_depth=64
+textures/vram_compression/import_etc2_astc=false
+
+[shader_globals]
+
+water_cam_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+water_sun_dir={
+"type": "vec3",
+"value": Vector3(0.287, 0.866, 0.41)
+}
+water_light_scale={
+"type": "float",
+"value": 1.0
+}
+water_fog_density={
+"type": "float",
+"value": 0.008
+}
+water_shaft_amount={
+"type": "float",
+"value": 1.0
+}
