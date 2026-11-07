@@ -1,0 +1,21 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/Bloop.gd" id="1_bloop"]
+[ext_resource type="PackedScene" path="res://assets/creatures/Bloop.glb" id="2_model"]
+[ext_resource type="Shader" path="res://shaders/bloop.gdshader" id="3_shader"]
+[ext_resource type="Texture2D" path="res://assets/creatures/Bloop_albedo.png" id="4_alb"]
+[ext_resource type="Texture2D" path="res://assets/creatures/Bloop_normal.png" id="5_nrm"]
+[ext_resource type="Texture2D" path="res://assets/creatures/Bloop_rough.png" id="6_rgh"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bloop"]
+render_priority = 0
+shader = ExtResource("3_shader")
+shader_parameter/albedo_tex = ExtResource("4_alb")
+shader_parameter/normal_tex = ExtResource("5_nrm")
+shader_parameter/rough_tex = ExtResource("6_rgh")
+
+[node name="Bloop" type="Node3D"]
+script = ExtResource("1_bloop")
+material = SubResource("ShaderMaterial_bloop")
+
+[node name="Model" parent="." instance=ExtResource("2_model")]

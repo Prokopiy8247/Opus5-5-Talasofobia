@@ -1,0 +1,89 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="NADIR"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+config/icon="res://icon.svg"
+
+[autoload]
+
+G="*res://scripts/G.gd"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/use_debanding=true
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+environment/volumetric_fog/volume_size=64
+environment/volumetric_fog/volume_depth=64
+lights_and_shadows/positional_shadow/atlas_size=2048
+
+[shader_globals]
+
+g_depth={
+"type": "float",
+"value": 0.0
+}
+g_water_col={
+"type": "color",
+"value": Color(0.18, 0.56, 0.58, 1)
+}
+g_cam_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+g_time={
+"type": "float",
+"value": 0.0
+}
+g_flow={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+g_torch_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+g_torch_dir={
+"type": "vec3",
+"value": Vector3(0, 0, -1)
+}
+g_torch={
+"type": "float",
+"value": 0.0
+}
+g_daylight={
+"type": "float",
+"value": 1.0
+}
+g_cam_vel={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
