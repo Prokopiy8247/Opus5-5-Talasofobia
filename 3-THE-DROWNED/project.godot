@@ -1,0 +1,180 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="THE DROWNED"
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+boot_splash/show_image=false
+boot_splash/bg_color=Color(0, 0, 0, 1)
+config/icon="res://icon.svg"
+
+[audio]
+
+driver/enable_input=false
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/window_width_override=1600
+window/size/window_height_override=900
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/vsync/vsync_mode=1
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+anti_aliasing/quality/msaa_3d=2
+anti_aliasing/quality/screen_space_aa=0
+anti_aliasing/quality/use_taa=false
+anti_aliasing/quality/use_debanding=true
+lights_and_shadows/directional_shadow/size=4096
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=2
+lights_and_shadows/positional_shadow/atlas_size=2048
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
+textures/default_filters/anisotropic_filtering_level=3
+
+[shader_globals]
+
+uw_cam_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_time={
+"type": "float",
+"value": 0.0
+}
+uw_fog={
+"type": "vec4",
+"value": Vector4(0.012, 0.0032, 1.0, 1.0)
+}
+uw_bands_c0={
+"type": "vec4",
+"value": Vector4(-40, -150, -255, -380)
+}
+uw_bands_c1={
+"type": "vec4",
+"value": Vector4(-520, -640, -780, -930)
+}
+uw_bands_w0={
+"type": "vec4",
+"value": Vector4(8, 14, 16, 18)
+}
+uw_bands_w1={
+"type": "vec4",
+"value": Vector4(18, 22, 24, 26)
+}
+uw_bands_s0={
+"type": "vec4",
+"value": Vector4(0.02, 0.025, 0.02, 0.018)
+}
+uw_bands_s1={
+"type": "vec4",
+"value": Vector4(0.014, 0.012, 0.012, 0.012)
+}
+pal_teal_near={
+"type": "vec3",
+"value": Vector3(0.05, 0.27, 0.24)
+}
+pal_teal_far={
+"type": "vec3",
+"value": Vector3(0.012, 0.074, 0.078)
+}
+pal_deep={
+"type": "vec3",
+"value": Vector3(0.002, 0.0097, 0.012)
+}
+pal_moss={
+"type": "vec3",
+"value": Vector3(0.027, 0.1, 0.06)
+}
+pal_steel={
+"type": "vec3",
+"value": Vector3(0.023, 0.028, 0.03)
+}
+pal_rust={
+"type": "vec3",
+"value": Vector3(0.25, 0.07, 0.024)
+}
+pal_verdigris={
+"type": "vec3",
+"value": Vector3(0.115, 0.33, 0.27)
+}
+pal_bone={
+"type": "vec3",
+"value": Vector3(0.58, 0.65, 0.55)
+}
+pal_shaft={
+"type": "vec3",
+"value": Vector3(0.52, 0.8, 0.69)
+}
+pal_amber={
+"type": "vec3",
+"value": Vector3(1.0, 0.46, 0.1)
+}
+uw_reveal={
+"type": "vec4",
+"value": Vector4(0, 0, 0, 0)
+}
+uw_dark={
+"type": "float",
+"value": 0.0
+}
+uw_glow={
+"type": "vec4",
+"value": Vector4(0, 0, 0, -940)
+}
+uw_lamp_pos={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_lamp_dir={
+"type": "vec4",
+"value": Vector4(0, 0, -1, 0)
+}
+uw_bcol0={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol1={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol2={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol3={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol4={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol5={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol6={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
+uw_bcol7={
+"type": "vec3",
+"value": Vector3(0, 0, 0)
+}
